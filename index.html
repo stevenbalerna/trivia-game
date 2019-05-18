@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBA Trivia Game</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="text-center"><strong> The NBA Quiz</strong></h1>
+    </div>
+
+    <body>
+    
+        <form id="nbaQuiz" name="nbaQuiz">
+
+            <p>Who has the most MVP awards in NBA History?</p>
+            <input type="radio" id="mc" name="question1" value="mj"> Michael Jordan<br>
+            <input type="radio" id="mc" name="question1" value="magic"> Magic Johnson<br>
+            <input type="radio" id="mc" name="question1" value="kaj"> Kareem Abdul-Jabbar<br>
+            <input type="radio" id="mc" name="question1" value="bron"> Lebron James<br>
+
+            <p>Which two NBA players scored 80 points or more in a single game?</p>
+            <input type="radio" id="mc" name="question2" value="kbwc"> Kobe Bryant and Wilt Chamberlin<br>
+            <input type="radio" id="mc" name="question2" value="mjwc"> Michael Jordan and Wilt Chamberlin<br>
+            <input type="radio" id="mc" name="question2" value="kbmj"> Kobe Bryant and Michael Jordan<br>
+            <input type="radio" id="mc" name="question2" value="ljmj"> Lebron James and Michael Jordan<br>
+
+            <p>Which team has the most championships in NBA History?</p>
+            <input type="radio" id="mc" name="question3" value="cb"> Chicago Bulls<br>
+            <input type="radio" id="mc" name="question3" value="bc"> Boston Celtics<br>
+            <input type="radio" id="mc" name="question3" value="lal"> Los Angeles Lakers<br>
+            <input type="radio" id="mc" name="question3" value="gsw"> Golden State Warriors<br>
+
+            <p>Which coach has the most regular season wins in NBA History?</p>
+            <input type="radio" id="mc" name="question4" value="pj"> Phil Jackson<br>
+            <input type="radio" id="mc" name="question4" value="pr"> Pat Riley<br>
+            <input type="radio" id="mc" name="question4" value="gp"> Greg Popovich<br>
+            <input type="radio" id="mc" name="question4" value="dn"> Don Nelson<br>
+
+            <input id="button" type="button" value="I'm finished!" onclick="click();">
+        </form>
+
+        <div id="results">
+            <p id="number_correct"></p>
+            <p id="message"></p>
+            <img id="picture">
+        </div>
+
+</html>
+
+</body>
+</div>
+
+
+</body>
+
+</html>
