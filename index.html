@@ -6,58 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NBA Trivia Game</title>
-    <link href="assets/css/style.css" rel="stylesheet">
-    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <div id="header">
-        <h1 class="text-center"><strong> The NBA Quiz</strong></h1>
-    </div>
 
-    <body>
-    
-        <form id="nbaQuiz" name="nbaQuiz">
-
-            <p>Who has the most MVP awards in NBA History?</p>
-            <input type="radio" id="mc" name="question1" value="mj"> Michael Jordan<br>
-            <input type="radio" id="mc" name="question1" value="magic"> Magic Johnson<br>
-            <input type="radio" id="mc" name="question1" value="kaj"> Kareem Abdul-Jabbar<br>
-            <input type="radio" id="mc" name="question1" value="bron"> Lebron James<br>
-
-            <p>Which two NBA players scored 80 points or more in a single game?</p>
-            <input type="radio" id="mc" name="question2" value="kbwc"> Kobe Bryant and Wilt Chamberlin<br>
-            <input type="radio" id="mc" name="question2" value="mjwc"> Michael Jordan and Wilt Chamberlin<br>
-            <input type="radio" id="mc" name="question2" value="kbmj"> Kobe Bryant and Michael Jordan<br>
-            <input type="radio" id="mc" name="question2" value="ljmj"> Lebron James and Michael Jordan<br>
-
-            <p>Which team has the most championships in NBA History?</p>
-            <input type="radio" id="mc" name="question3" value="cb"> Chicago Bulls<br>
-            <input type="radio" id="mc" name="question3" value="bc"> Boston Celtics<br>
-            <input type="radio" id="mc" name="question3" value="lal"> Los Angeles Lakers<br>
-            <input type="radio" id="mc" name="question3" value="gsw"> Golden State Warriors<br>
-
-            <p>Which coach has the most regular season wins in NBA History?</p>
-            <input type="radio" id="mc" name="question4" value="pj"> Phil Jackson<br>
-            <input type="radio" id="mc" name="question4" value="pr"> Pat Riley<br>
-            <input type="radio" id="mc" name="question4" value="gp"> Greg Popovich<br>
-            <input type="radio" id="mc" name="question4" value="dn"> Don Nelson<br>
-
-            <input id="button" type="button" value="I'm finished!" onclick="click();">
-        </form>
-
-        <div id="results">
-            <p id="number_correct"></p>
-            <p id="message"></p>
-            <img id="picture">
-        </div>
-
-</html>
-
-</body>
-</div>
+    <body background="assets/images/nba-logo.jpg">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid text-center text-white bg-primary">
+                    <div class="container">
+                        <div id="quiz">
+                        <h1 class="text-center"><strong> NBA Trivia </strong></h1>
+                        <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+                        <p id="question" class="lead"></p>
+                    </div>   
+                    </div>
+                    <div id="results">
+                    </div>
+                </div>
+                
+                <div class="row">
+                <div id="choices" class="col text-center">
+                        <button id="start" class="btn btn-primary btn-lg">Start</button>
+                        <div id="options">
+            
+                        </div>
 
 
-</body>
+                </div>    
+
+
+
+                </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>                
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/javascript/app.js"></script>
+    </body>
 
 </html>
